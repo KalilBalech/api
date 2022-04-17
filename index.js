@@ -86,6 +86,22 @@ function auth_middleware(req, res, next) { // a req, antes de chegar na api, é 
 
 // })
 
+app.delete("/book", auth_middleware, async(req, res)=>{
+    console.log("Entrei na axios.delete")
+    var status = await bookService.deleteBook( 
+        req.body.nome, req.body.autor, req.body.descricao
+    )
+    console.log("Passei da axios.delete com status igual a "+ status)
+    if(status){
+        alert("Livro deletado")
+    }
+    else{
+        res.send("Ocorreu uma falha!")
+    }
+}) 
+
+// REQUISIÇÃO FEITA PELO FORMS DO ARQUIVO HTML
+
 app.post("/book", auth_middleware, async (req, res) => { // quem chama essa requisição é o forms do arquivo home.html
     console.log("Entre na axios.post com os dados:"+req.body.nomeDoLivro+req.body.nomeDoAutor+req.body.descricaoDoLivro)
     var status = await bookService.Create(
@@ -103,6 +119,8 @@ app.post("/book", auth_middleware, async (req, res) => { // quem chama essa requ
     }
 
 })
+
+// REQUISIÇÃO FEITA PELA PAGINA PRINCIPAL PARA MOSTRAR OS LIVROS DA BASE DE DADOS
 
 app.get("/books", auth_middleware, async (req, res) => {
 
@@ -137,9 +155,9 @@ app.post("/auth", async (req, res) => {
         })
     } else {
         res.sendStatus(400)
-        res.send("erro: email inválido") 
+        res.send("erro: email inválido")
     }
 
 })
 
-app.listen(8080, () => {console.log("API RODANDO!") })
+app.listen(8080, () => {console.log("API RODANDO, MEU GUUD!") })

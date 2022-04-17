@@ -24,6 +24,19 @@ class BookService {
         return await Book.find()
     }
 
+    async deleteBook(name, author, description){
+        console.log("Entrei na deleteBook")
+        let book = Book.find({nome: name, autor: author, descricao:description})
+        try{
+            await Book.findByIdAndDelete(book._id)
+            return true
+        }
+        catch(error){
+            console.log(error)
+            return false
+        }
+    }
+
 }
 
 module.exports = new BookService();

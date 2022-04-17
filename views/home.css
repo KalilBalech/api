@@ -107,9 +107,10 @@ section h3 a{
     background-color: white;
     margin: 4vh 5vw;
     border-radius: 5px;
-    width: 90vw;
+    width: 60vw;
     padding: 3vh 5vw;
     box-shadow: 1px 1px 1px grey;
+    position: relative;
     display: none;
 }
 
@@ -122,4 +123,27 @@ section h3 a{
 }
 .book p{
     font-size: 12px;
+}
+
+.book .fa-pencil{
+    position: absolute;
+    left: 50vw;
+    bottom: 8vh;
+}
+
+.book .fa-trash{
+    position: absolute;
+    left: 53vw;
+    bottom: 8vh;
+}
+i{
+    color: #2deaff;
+}
+
+button{
+    display: inline-block;
+}
+
+button:hover{
+    cursor: pointer;
 }

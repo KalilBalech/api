@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
     <title>Gerenciamento de livros</title>
+    <script src="https://kit.fontawesome.com/cb8a346264.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,10 +24,12 @@
     </section>
     <section id="books">
         <h1>Registered Books</h1>
-        <div class="book">
+        <div class="book" data-titulo="Nome do livro" data-autor="Nome do autor" data-descricao="Descricao">
             <h3>Nome do livro</h3>
             <h4>Nome do autor</h4>
             <p>Descrição do livro</p>
+            <button onclick=""><i class="fa-solid fa-pencil fa-lg"></i></button>
+            <button onclick="deletar()"><i class="fa-solid fa-trash fa-lg"></i></button>
         </div>
     </section>
 </body>
