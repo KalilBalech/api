@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background-image: linear-gradient(to right, #3ad3e5 , #af8bf5)
+
+}
+
+a{
+    text-decoration: none;
+}
+
+#card{
+    box-shadow: 1px 1px 1px grey;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 60vh;
+    background-color: white;
+    padding: 12vh 5vw ;
+    margin-top: 20vh;
+    border-radius: 5px;
+}
+
+.title h1{
+    color: #2deaff;
+}
+
+.title h3{
+    color: #a6a6a6;
+    font-weight: 200;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+input{
+    width: 100%;
+    padding: 5px 10px ;
+    border: none;
+    border-bottom: 1px solid #2deaff;
+    color: #a6a6a6;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #a6a6a6;
+    font-weight: 100;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+#forgotPassword{
+    margin-bottom: 20px;
+}
+
+#forgotPassword a {
+    text-decoration: none;
+    color: #878787;
+}
+
+
+#forgotPassword a h3{
+    font-size: 12px;
+}
+
+button{
+    background-image: linear-gradient(to right, #c063e0 , #5e29f6);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+section:last-child{
+    font-size: 12px;
+}
+
+section:last-child a{
+    color: #00e1fa;
+}
