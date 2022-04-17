@@ -21,10 +21,10 @@ a{
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 60vh;
+    height: 40vh;
     background-color: white;
-    padding: 12vh 5vw ;
-    margin-top: 20vh;
+    padding: 5vh 5vw ;
+    margin-top: 10vh;
     border-radius: 5px;
 }
 
@@ -95,4 +95,31 @@ section h3{
 
 section h3 a{
     color: #00e1fa;
+}
+
+#books{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book{
+    background-color: white;
+    margin: 4vh 5vw;
+    border-radius: 5px;
+    width: 90vw;
+    padding: 3vh 5vw;
+    box-shadow: 1px 1px 1px grey;
+    display: none;
+}
+
+.book h3{
+    font-size: 24px;
+    color: #2deaff;
+}
+.book h4{
+    font-size: 16px;
+}
+.book p{
+    font-size: 12px;
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <section id="card">
+        <div class="title">
+            <h1>Login</h1>
+            <h3>Enter your details below to continue</h3>
+        </div>
+        <form action="#"> 
+            <input type="email" name="email" id="email" placeholder="E-mail Address">
+            <input type="text" name="password" id="password" placeholder="Password"> <!--Se o type do input for password, é impossivel pegar o valor dele com getelementbyid.value-->
+            <input type="button" class="button" value="Login" onclick="login()">
+        </form>
+        <h3>Don't have an account?<a href="#"> Sign up Here</a> </h3>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./login.js"></script>
+</html>
